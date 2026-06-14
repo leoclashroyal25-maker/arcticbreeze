@@ -369,12 +369,138 @@
     <div class="cta-price">$34.99</div>
     <div style="text-decoration:line-through;color:var(--muted);margin-bottom:0.5rem;font-size:1rem">Regular price $69.99</div>
     <div class="cta-free-ship">✦ Free shipping on all orders</div>
-    <!-- SHOPIFY BUY BUTTON GOES HERE -->
-    <div id="product-component-shopify" style="margin-bottom:1rem">
-      <!-- Paste your Shopify Buy Button embed code here -->
-      <button class="btn-primary" style="width:100%;font-size:1.2rem;padding:1.2rem" onclick="alert('Connect your Shopify Buy Button here! See the guide below.')">
-        Add to Cart — $34.99
-      </button>
+    <!-- SHOPIFY BUY BUTTON -->
+    <div style="margin-bottom:1rem">
+      <div id='product-component-1781413002322'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'gzqnct-q0.myshopify.com',
+      storefrontAccessToken: '8c0035ed034764793fd2a500d1186426',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '9382172197078',
+        node: document.getElementById('product-component-1781413002322'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-size": "26px",
+        "color": "#ffffff"
+      },
+      "button": {
+        "font-family": "Open Sans, sans-serif",
+        "font-weight": "bold",
+        "font-size": "18px",
+        "padding-top": "18px",
+        "padding-bottom": "18px",
+        ":hover": {
+          "background-color": "#00b8d9"
+        },
+        "background-color": "#00E5FF",
+        "color": "#050C1A",
+        ":focus": {
+          "background-color": "#00b8d9"
+        },
+        "border-radius": "50px",
+        "padding-left": "40px",
+        "padding-right": "40px",
+        "width": "100%"
+      },
+      "quantityInput": {
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px"
+      },
+      "price": {
+        "font-size": "22px",
+        "color": "#00E5FF"
+      },
+      "compareAt": {
+        "font-size": "16px",
+        "color": "#7BA3C4"
+      }
+    },
+    "buttonDestination": "checkout",
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": false,
+      "description": false
+    },
+    "width": "100%",
+    "text": {
+      "button": "Buy Now — $34.99"
+    },
+    "googleFonts": ["Open Sans"]
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Open Sans, sans-serif",
+        "font-weight": "bold",
+        "font-size": "16px",
+        "padding-top": "16px",
+        "padding-bottom": "16px",
+        ":hover": {"background-color": "#00b8d9"},
+        "background-color": "#00E5FF",
+        "color": "#050C1A",
+        ":focus": {"background-color": "#00b8d9"},
+        "border-radius": "50px"
+      }
+    },
+    "text": {"total": "Subtotal", "button": "Checkout"},
+    "googleFonts": ["Open Sans"]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Open Sans, sans-serif",
+        "font-weight": "bold",
+        "background-color": "#00E5FF",
+        "color": "#050C1A",
+        ":hover": {"background-color": "#00b8d9"},
+        ":focus": {"background-color": "#00b8d9"}
+      }
+    },
+    "googleFonts": ["Open Sans"]
+  }
+}
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
     </div>
     <div class="guarantee">
       <svg viewBox="0 0 16 16"><path d="M8 1L2 4v5c0 3.5 2.5 6.5 6 7.5 3.5-1 6-4 6-7.5V4L8 1z"/></svg>
